@@ -1,32 +1,27 @@
 <template>
-  <div>
-    <Navbar />
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <div id="app" class="flex flex-col items-stretch">
+    <Navbar class="z-10"/>
 
+  
+    <router-view></router-view>
+
+   
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue'
-import './assets/css/tailwind.css'
+// import Landing from './components/Landing.vue'
+import './assets/css/tailwind.css' 
 
 export default {
   name: 'App',
   components: {
-    Home,
-    About
+    Navbar
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
